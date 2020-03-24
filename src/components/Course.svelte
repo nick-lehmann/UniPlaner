@@ -1,12 +1,8 @@
 <script lang="ts">
-  export let name = "";
-  export let modules = [];
-  export let hours = [];
-  export let teachers = [];
-  // export let institute = "";
-  // export let code = "";
-  // export let exam = "";
-  // export let master = undefined;
+  import { Course } from "../models"
+
+  export let course: Course
+  
 </script>
 
 <style>
@@ -34,11 +30,11 @@
 </style>
 
 <div class="card course">
-  <h3>{name}</h3>
-  <span>{hours.join('/')} - {teachers.join(', ')}</span>
+  <h3>{course.name}</h3>
+  <span>{course.hours.join('/')} - {course.teachers.join(', ')}</span>
 
   <ul>
-    {#each modules as module}
+    {#each course.possibleModules as module}
       <li class="module">{module.name}</li>
     {/each}
   </ul>

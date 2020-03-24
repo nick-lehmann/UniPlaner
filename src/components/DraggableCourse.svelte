@@ -6,10 +6,15 @@
 
   export let course;
 
+  console.log(course)
+
+  const props = {
+    course: course
+  }
+
   function dragStart(event) {
-    console.log("Drag started")
-    currentlyDraggedCourse.set(event.detail.props)
+    currentlyDraggedCourse.set(course)
   }
 </script>
 
-<Draggable component={Course} props={course} on:dragStart={dragStart}/>
+<Draggable component={Course} props={props} on:dragStart={dragStart}/>

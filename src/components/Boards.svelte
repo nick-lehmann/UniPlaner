@@ -9,19 +9,12 @@
 
   let planer = new UniPlaner(courses)
 
-  function courseMoved (event) {
-    console.log("Course moved!")
-    console.log(event.detail.course)
-    // const moduleIndex = moduleIndexByName(event.detail.module) 
-    // const newModules = [...modules]
+  window.planer = planer
 
-    // // Remove from old module
-    // for (const module of newModules)
-    //   module.courses = module.courses.filter(course => course.name != event.detail.course.name)
-      
-    // // Add to new module
-    // newModules[moduleIndex].courses.splice(event.detail.index, 0, event.detail.course)
-    // modules = newModules
+  function courseMoved (event) {
+    const receivingModule: Module = event.detail.module
+    const movedCourse: Course = event.detail.course
+    planer.moveCourse(movedCourse, receivingModule)
   }
 </script>
 

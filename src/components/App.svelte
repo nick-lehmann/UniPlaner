@@ -1,13 +1,9 @@
 <script lang="ts">
-  import Index from "./Index.svelte"
+  import Sidebar from "./Sidebar.svelte"
   import Boards from "./Boards.svelte"
   
   import allCourses from "../stores/allCourses"
   import groupBy from "../utils/groupBy.js"
-
-  const course_map = groupBy(allCourses, course =>
-    course.possibleModules.map(module => module.name)
-  );
 </script>
 
 <style>
@@ -35,7 +31,7 @@
 </style>
 
 <aside>
-  <Index courses={allCourses} />
+  <Sidebar courses={allCourses} />
 </aside>
 
 <div class="boards">

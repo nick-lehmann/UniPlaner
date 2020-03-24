@@ -7,8 +7,11 @@ export default class Module {
 
     courses: Course[]
 
-    constructor() {
-        this.courses = []
+    constructor({name, code, level, courses = []}) {
+        this.name = name
+        this.code = code
+        this.level = level
+        this.courses = courses
     }
     
     /**
@@ -21,7 +24,7 @@ export default class Module {
     }
 
     addCourse(course: Course) {
-        this.courses.push(course)
+        this.courses = [...this.courses, course]
     }
 
     removeCourse(course: Course) {
@@ -30,6 +33,21 @@ export default class Module {
     }
     
     containsCourse(course: Course): boolean {
-        return false
+        return this.courses.findIndex(c => c.name == course.name) > -1
+    }
+
+    /**
+     * Returns the cumulative hours of work from the currently
+     * selected courses.
+     */
+    currentHours(): number[] {
+        console.log("GET CURRENT HOURS")
+        const sum = [0,0,0]
+        for (const course of this.courses) {
+            sum[0] += course.hours[0]
+            sum[1] += course.hours[1]
+            sum[2] += course.hours[2]
+        }
+        return sum
     }
 }

@@ -9,4 +9,18 @@ export default class Course {
     exam: string
     master: boolean
     possibleModules: Module[]
+
+    constructor({
+        name, hours, teachers, institute,
+        code, exam, master, possibleModules = []
+    }) {
+        this.name = name
+        this.hours = hours,
+        this.teachers = teachers
+        this.institute = institute
+        this.code = code ? code : ""
+        this.exam = exam
+        this.master = master
+        this.possibleModules = possibleModules
+    }
 }

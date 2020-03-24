@@ -9,6 +9,9 @@
   import { Module, Course }  from '../models'
 
   export let module: Module;
+  let currentHours = [0,0,0] 
+
+  $: module.courses, currentHours = module.currentHours()
 
   // Unique id for a dropzone, format: "name_index"
   type DropZoneId = string;
@@ -21,22 +24,18 @@
    */
   function onDrop({ detail: { from, to, item: movedCourse } }) {
     // Details of moved item
-    const course: Course = movedCourse.props;
-    console.log(
-      "%cItem dropped",
-      "font-weight: 900; text-transform: uppercase"
-    );
-    console.log(from, " => ", to);
-    console.log("Course: ", course);
-
+    const course: Course = movedCourse.props.course;
+    
     // Do nothing if dragged into same module
     if (from === to) return;
     
 		dispatch('receivedCourse', {
       course, 
-      module: this.module,
+      module: module,
       index: dropZoneIndex(to)
     });
+
+    module.courses = module.courses
   }
 
   /**
@@ -45,7 +44,7 @@
    */
   function onDragOver(data) {
     const course: Course = get(currentlyDraggedCourse)
-    if (this.module.acceptsCoruse(course))
+    if (module.acceptsCourse(course))
       activeDropZone = dropZoneIndex(data.detail.dropZoneId);
   }
 
@@ -93,6 +92,8 @@
     {module.name.toUpperCase()}
     {#if module.code}({module.code}){/if}
   </h2>
+
+  <p>{ currentHours.join('/') }</p>
 
   <ul>
     <DropZone

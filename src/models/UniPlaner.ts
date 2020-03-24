@@ -8,7 +8,7 @@ export default class UniPlaner {
     constructor(courses: Course[]) {
         this.courses = courses
         this.modules = uniqueModules(courses)
-        
+
         console.log(`Found ${this.modules.length} modules`)
     }
 
@@ -20,8 +20,10 @@ export default class UniPlaner {
      */
     moveCourse(course: Course, to: Module) {
         if (!to.acceptsCourse(course)) return
+        const oldModule = this.moduleByCourse(course)
+        if (oldModule != null)
+            oldModule.removeCourse(course)
         to.addCourse(course)
-        this.moduleByCourse(course).removeCourse(course)
     }
 
     /**
@@ -45,12 +47,15 @@ export default class UniPlaner {
  * @param {Array} courses 
  */
 function uniqueModules(courses: Course[]): Module[] {
-    const moduleNames = [], modules = [];
-    for (const course of courses)
-        for (const module of course.possibleModules) {
-            if (moduleNames.indexOf(module.name) != -1) continue
-            moduleNames.push(module.name);
-            modules.push(module)
+    const modules = {}
+
+    for (const rawCourse of courses) {
+        const course = new Course(rawCourse)
+        for (const rawModule of course.possibleModules) {
+            if (!(rawModule.name in modules))
+                modules[rawModule.name] = new Module(rawModule)
+            modules[rawModule.name].courses.push()
         }
-    return modules
+    }
+    return Object.values(modules)
 }
