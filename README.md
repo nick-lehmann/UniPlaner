@@ -1,19 +1,22 @@
-# Svelte + Typescript + Rollup
+# 🏫 UniPlaner
 
-Minimal boilerplate example of Svelte with Typescript using Rollup.
-This also includes SCSS support
+Trello-esque planer that allows the user to schedule which course he/she should take for a certain module. Currently supports the Computer Science course for the TU Dresden.
 
-Install packages
+## 💡Technology
+
+- Svelte
+- Typescript
+- Bulma
+
+## 🔧Setup
+
+Install packages.
+
 ```bash
-$ yarn
+$ npm install
 ```
 
 Start development server
 ```bash
-$ yarn serve
-```
-
-Build for production
-```bash
-$ yarn build
+$ npm run serve
 ```
