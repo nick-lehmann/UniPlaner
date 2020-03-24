@@ -39,6 +39,10 @@ class Course:
     modules: List[Module] = None
 
 
+def unique_objects(objects, key):
+    return list({getattr(o, key):o for o in objects}.values())
+
+
 def parse_hours(hours: str) -> List[int]:
     """ '2/2/0' => [2,2,0] """
     return [int(time) for time in hours.split('/')]
@@ -122,9 +126,19 @@ for element in structure:
     if tag == 'table':
         module = module_path[1] if len(module_path) > 1 else module_path[0]
         courses = parse_table(element)
+        
         for course in courses:
-            course.modules = deepcopy(module_path)
-        all_courses += courses
+            try:
+                if not courses:
+                    raise StopIteration
+                existing_course = next(c for c in all_courses if c.name == course.name)
+                # Merge with existing course
+                existing_course.modules = unique_objects(deepcopy(module_path) + existing_course.modules, key="name")
+                
+            except StopIteration:
+                # Create new course
+                course.modules = deepcopy(module_path)
+                all_courses += [course]
 
 with open('output.json', 'w') as file:
     json.dump([asdict(course) for course in all_courses], file, indent=4, ensure_ascii=False)
