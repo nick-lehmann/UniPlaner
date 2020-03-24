@@ -1,0 +1,29 @@
+{
+  "name": "svelte-typescript-rollup",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "serve": "rm -rf ./dist && NODE_ENV=development rollup --config --watch",
+    "build": "rm -rf ./dist && NODE_ENV=production rollup --config"
+  },
+  "dependencies": {
+    "svelte": "^3.17.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "rollup": "^1.29.1",
+    "rollup-plugin-bundle-html": "^0.2.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-scss": "^2.1.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "svelte-preprocess": "^3.3.0",
+    "typescript": "^3.7.5"
+  }
+}
