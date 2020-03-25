@@ -14,7 +14,7 @@ const allCourses =
         "code": "INF-B-420",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "2. Semester",
                 "code": "",
@@ -36,7 +36,7 @@ const allCourses =
         "code": "INF-B-260",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "2. Semester",
                 "code": "",
@@ -58,7 +58,7 @@ const allCourses =
         "code": "INF-B-120",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "2. Semester",
                 "code": "",
@@ -80,7 +80,7 @@ const allCourses =
         "code": "INF-B-240",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "2. Semester",
                 "code": "",
@@ -103,7 +103,7 @@ const allCourses =
         "code": "INF-B-310",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "2. Semester",
                 "code": "",
@@ -126,7 +126,7 @@ const allCourses =
         "code": "INF-B-370",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "4. Semester",
                 "code": "",
@@ -148,7 +148,7 @@ const allCourses =
         "code": "INF-B-330",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "4. Semester",
                 "code": "",
@@ -170,7 +170,7 @@ const allCourses =
         "code": "INF-B-370",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "4. Semester",
                 "code": "",
@@ -192,7 +192,7 @@ const allCourses =
         "code": "INF-B-290",
         "exam": "",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "4. Semester",
                 "code": "",
@@ -214,7 +214,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 20min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -246,7 +246,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -278,7 +278,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 30 min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -310,7 +310,7 @@ const allCourses =
         "code": "",
         "exam": "≤ 15 Teilnehmer: P(m) 25min, > 15 Teilnehmer: P(s) 90min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -342,7 +342,7 @@ const allCourses =
         "code": "",
         "exam": "-",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -374,7 +374,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -406,7 +406,7 @@ const allCourses =
         "code": "",
         "exam": "P(PE)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -438,7 +438,7 @@ const allCourses =
         "code": "",
         "exam": "P(s)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -470,7 +470,7 @@ const allCourses =
         "code": "",
         "exam": "P(s)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -502,7 +502,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 20min wenn <15 Teilnehmer, sonst P(s) 90min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -534,7 +534,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -567,7 +567,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -599,7 +599,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -631,7 +631,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -663,7 +663,7 @@ const allCourses =
         "code": "",
         "exam": "P(s)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -695,7 +695,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -727,7 +727,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -759,7 +759,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -791,7 +791,7 @@ const allCourses =
         "code": "",
         "exam": "P(A)/P(V)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -823,7 +823,7 @@ const allCourses =
         "code": "",
         "exam": "-",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -850,7 +850,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -882,7 +882,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -914,7 +914,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -941,7 +941,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -968,7 +968,7 @@ const allCourses =
         "code": "",
         "exam": "-",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1000,7 +1000,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1032,7 +1032,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1064,7 +1064,7 @@ const allCourses =
         "code": "",
         "exam": "-",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1096,7 +1096,7 @@ const allCourses =
         "code": "",
         "exam": "P(PA) + P(V)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1128,7 +1128,7 @@ const allCourses =
         "code": "",
         "exam": "Kolloquium",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1160,7 +1160,7 @@ const allCourses =
         "code": "",
         "exam": "P(PE)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1192,7 +1192,7 @@ const allCourses =
         "code": "",
         "exam": "P(PE)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1224,7 +1224,7 @@ const allCourses =
         "code": "",
         "exam": "L(PA + V 30min)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1256,7 +1256,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25min, P(PP)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1288,7 +1288,7 @@ const allCourses =
         "code": "",
         "exam": "P(PA) + P(V)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1320,7 +1320,7 @@ const allCourses =
         "code": "",
         "exam": "P(PA)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1353,7 +1353,7 @@ const allCourses =
         "code": "",
         "exam": "L(PP)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1385,7 +1385,7 @@ const allCourses =
         "code": "",
         "exam": "P(PA) + P(V)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1427,7 +1427,7 @@ const allCourses =
         "code": "",
         "exam": "Kolloquium",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1460,7 +1460,7 @@ const allCourses =
         "code": "",
         "exam": "L(PP)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1492,7 +1492,7 @@ const allCourses =
         "code": "",
         "exam": "Kolloquium (benotet)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1524,7 +1524,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25 min, P(m) je nach Modul und Fachgebiet",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1556,7 +1556,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1588,7 +1588,7 @@ const allCourses =
         "code": "",
         "exam": "P(s)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1620,7 +1620,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1652,7 +1652,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1684,7 +1684,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1716,7 +1716,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1748,7 +1748,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 20min",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1780,7 +1780,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1812,7 +1812,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1854,7 +1854,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1896,7 +1896,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1939,7 +1939,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -1982,7 +1982,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2024,7 +2024,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2066,7 +2066,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation, P(m) je nach Modul und Fachgebiet",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2108,7 +2108,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2150,7 +2150,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2182,7 +2182,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25min, P(m) je nach Modul und Fachgebiet",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2214,7 +2214,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsenation",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2241,7 +2241,7 @@ const allCourses =
         "code": "",
         "exam": "P(s)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2273,7 +2273,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2316,7 +2316,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2348,7 +2348,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2380,7 +2380,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2412,7 +2412,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2439,7 +2439,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2466,7 +2466,7 @@ const allCourses =
         "code": "",
         "exam": "P(PE)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2493,7 +2493,7 @@ const allCourses =
         "code": "",
         "exam": "P(sA)",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2521,7 +2521,7 @@ const allCourses =
         "code": "",
         "exam": "P(s)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2548,7 +2548,7 @@ const allCourses =
         "code": "",
         "exam": "-",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2576,7 +2576,7 @@ const allCourses =
         "code": "",
         "exam": "P(m)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2604,7 +2604,7 @@ const allCourses =
         "code": "",
         "exam": "P(s) Klausur (90 Min)",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2636,7 +2636,7 @@ const allCourses =
         "code": "",
         "exam": "P(m) 25min, P(m) je nach Modul und Fachgebiet",
         "master": true,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2668,7 +2668,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2700,7 +2700,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2732,7 +2732,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
@@ -2764,7 +2764,7 @@ const allCourses =
         "code": "",
         "exam": "Seminararbeit und Präsentation",
         "master": false,
-        "modules": [
+        "possibleModules": [
             {
                 "name": "6. Semester",
                 "code": "",
