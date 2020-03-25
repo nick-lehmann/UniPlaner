@@ -2,7 +2,7 @@
   import { createEventDispatcher } from 'svelte';
   import { get } from 'svelte/store';
   import DraggableCourse from "./DraggableCourse.svelte";
-  import { DropZone, Draggable } from "../utils/DnD/";
+  import { DropZone, Draggable, dropZoneIndex, dropZoneID } from "../utils/DnD/";
   import { boardsStore, currentlyDraggedCourse } from "../stores/"
   import { Module, Course }  from '../models'
 
@@ -10,10 +10,7 @@
   let currentHours = [0,0,0]
 
   $: module.courses, currentHours = module.currentHours()
-
-  // Unique id for a dropzone, format: "name_index"
-  type DropZoneId = string;
-  
+ 
   let activeDropZone = undefined;
 	const dispatch = createEventDispatcher();
 
@@ -21,12 +18,9 @@
    *  Move course after is has been dropped on a new board. 
    */
   function onDrop({ detail: { from, to, item: movedCourse } }) {
-    // Details of moved item
+    if (from === to) return; // Do nothing if dragged into same module
+    
     const course: Course = movedCourse.props.course;
-    
-    // Do nothing if dragged into same module
-    if (from === to) return;
-    
 		dispatch('receivedCourse', {
       course, 
       module: module,
@@ -51,15 +45,6 @@
    */
   function onDragOut(data) {
     activeDropZone = undefined;
-  }
-
-  function dropZoneID(index: number): DropZoneId {
-    const id = index + 1;
-    return module.name + "_" + id;
-  }
-
-  function dropZoneIndex(id: DropZoneId): number {
-    return parseInt(id.split("_")[1]) - 1;
   }
 </script>
 
@@ -99,7 +84,7 @@
       on:drop={onDrop}
       on:dragover={onDragOver}
       on:dragout={onDragOut}
-      id={dropZoneID(0)} />
+      id={dropZoneID(module.name, 0)} />
 
     {#if module.courses}
     {#each module.courses as course, index}
@@ -110,7 +95,7 @@
           on:drop={onDrop}
           on:dragover={onDragOver}
           on:dragout={onDragOut}
-          id={dropZoneID(index + 1)} />
+          id={dropZoneID(module.name, index + 1)} />
       </li>
     {/each}
     {/if}
