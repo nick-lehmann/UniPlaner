@@ -2,12 +2,15 @@
   import Sidebar from "./Sidebar.svelte"
   import Boards from "./Boards.svelte"
   
-  import allCourses from "../stores/allCourses"
-  import groupBy from "../utils/groupBy.js"
+  import { allCourses, boardsStore } from "../stores/"
+  
+  const unsubscribe = boardsStore.subscribe(boards => {
+    console.log(boards);
+    window.boards = boards
+  })
 </script>
 
 <style>
-  /* The sidebar menu */
   aside {
     height: 100%;
     width: 20%;

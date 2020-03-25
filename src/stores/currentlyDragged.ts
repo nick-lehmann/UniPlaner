@@ -1,3 +1,5 @@
 import { writable } from 'svelte/store';
 
-export const currentlyDraggedCourse = writable(null);
+const currentlyDraggedCourse = writable(null);
+
+export default currentlyDraggedCourse

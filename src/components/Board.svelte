@@ -1,15 +1,13 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
   import { get } from 'svelte/store';
-  
   import DraggableCourse from "./DraggableCourse.svelte";
   import { DropZone, Draggable } from "../utils/DnD/";
-  import { currentlyDraggedCourse } from "../stores/currentlyDragged"
-  
+  import { boardsStore, currentlyDraggedCourse } from "../stores/"
   import { Module, Course }  from '../models'
 
   export let module: Module;
-  let currentHours = [0,0,0] 
+  let currentHours = [0,0,0]
 
   $: module.courses, currentHours = module.currentHours()
 

@@ -2,11 +2,9 @@
   import Draggable from "../utils/DnD/Draggable.svelte";
   import Course from "./Course.svelte";
 
-  import { currentlyDraggedCourse } from "../stores/currentlyDragged"
+  import { currentlyDraggedCourse } from "../stores"
 
   export let course;
-
-  console.log(course)
 
   const props = {
     course: course

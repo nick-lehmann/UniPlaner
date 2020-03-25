@@ -8,8 +8,6 @@ export default class UniPlaner {
     constructor(courses: Course[]) {
         this.courses = courses
         this.modules = uniqueModules(courses)
-
-        console.log(`Found ${this.modules.length} modules`)
     }
 
     /**

@@ -3,8 +3,6 @@
   import DraggableCourse from "./DraggableCourse.svelte";
 
   export let courses = [];
-  console.log("All courses")
-  console.log(courses)
   let search = "";
   let filtered = courses;
 
@@ -12,7 +10,6 @@
     filtered = courses.filter(course =>
       course.name.toLowerCase().includes(search.toLowerCase())
     );
-    console.log(filtered);
   }
 </script>
 

@@ -41,7 +41,6 @@ export default class Module {
      * selected courses.
      */
     currentHours(): number[] {
-        console.log("GET CURRENT HOURS")
         const sum = [0,0,0]
         for (const course of this.courses) {
             sum[0] += course.hours[0]
